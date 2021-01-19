@@ -70,7 +70,18 @@ export default function Layout(props) {
             p: 3,
           }}
         >
-          ©️ {new Date().getFullYear()} 💻 con 🔥 por
+          <span role="img" aria-label="copyright">
+            ©️
+          </span>{" "}
+          {new Date().getFullYear()}{" "}
+          <span role="img" aria-label="coded">
+            💻
+          </span>{" "}
+          con{" "}
+          <span role="img" aria-label="fire">
+            🔥
+          </span>{" "}
+          por
           {` `}
           <Styled.a as={Link} to="/">
             mi
