@@ -22,6 +22,9 @@ export default function Layout(props) {
     <React.Fragment>
       <Global
         styles={theme => ({
+          "*:focus": {
+            outline: "none",
+          },
           "::selection": {
             backgroundColor: theme.colors.secondary,
             color: theme.colors.text,
