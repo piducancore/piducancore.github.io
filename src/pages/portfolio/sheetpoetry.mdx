@@ -1,9 +1,11 @@
 import { Example } from "../../components/sheetpoetry"
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client"
+import fetch from "isomorphic-fetch"
 
 export const client = new ApolloClient({
   uri: "https://sheetpoetry.now.sh/graphql",
   cache: new InMemoryCache(),
+  fetch,
 })
 
 # sheetpoetry
