@@ -36,7 +36,7 @@ export default function Layout(props) {
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
-          px: 3,
+          px: 2,
         }}
       >
         <header
