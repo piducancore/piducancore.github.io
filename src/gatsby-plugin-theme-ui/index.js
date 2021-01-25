@@ -6,10 +6,10 @@ import "@fontsource/bitter/700.css"
 
 const theme = merge(light, {
   colors: {
-    text: "#000033",
-    primary: "#357DED",
-    secondary: "#FEE440",
-    background: "#FFF8FF",
+    text: "#1E212B",
+    primary: "#D90368",
+    secondary: "#FFD400",
+    background: "#FFFFFF",
     modes: {
       dark: {
         ...dark.colors,
@@ -51,6 +51,14 @@ const theme = merge(light, {
       },
     },
   },
+  cards: {
+    primary: {
+      padding: 3,
+      borderRadius: 4,
+      boxShadow: "0 0 8px rgba(0, 0, 0, 0.125)",
+      mb: 3,
+    },
+  },
   styles: {
     a: {
       color: "primary",
@@ -67,5 +75,4 @@ const theme = merge(light, {
     },
   },
 })
-console.log(theme)
 export default theme
