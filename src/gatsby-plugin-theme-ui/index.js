@@ -73,6 +73,9 @@ const theme = merge(light, {
       px: 1,
       borderRadius: 3,
     },
+    img: {
+      width: "100%",
+    },
   },
 })
 export default theme
