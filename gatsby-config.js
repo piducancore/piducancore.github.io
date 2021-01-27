@@ -3,6 +3,7 @@ module.exports = {
     title: "piducan.dev",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-sharp",
     "gatsby-remark-images",
@@ -17,6 +18,13 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
+            },
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              // destinationDir: `path/to/dir`,
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
             },
           },
         ],
