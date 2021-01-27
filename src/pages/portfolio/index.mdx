@@ -1,3 +1,30 @@
-# Here's some work I've open-sourced
+import Layout from "../../components/Layout"
+import { graphql, Link } from "gatsby"
 
-soon...
+export default ({ children, ...props }) => {
+  const { nodes } = props.pageResources.json.data.allMdx
+  return (
+    <Layout>
+      {children}
+      {nodes.map(({ slug }) => (
+        <div key={slug}>
+          <a as={Link} to={"/" + slug}>
+            {slug}
+          </a>
+        </div>
+      ))}
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query PortfolioQuery {
+    allMdx(filter: { slug: { regex: "/^portfolio/./" } }) {
+      nodes {
+        slug
+      }
+    }
+  }
+`
+
+# Here's some work I've open-sourced
