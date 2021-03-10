@@ -81,7 +81,7 @@ export default function Form({ onCompleted }) {
                 })
               }
             >
-              New poem
+              New
             </Button>
             <Button
               sx={{ flex: 1, ml: 2 }}

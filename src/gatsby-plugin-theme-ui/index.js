@@ -1,5 +1,6 @@
 import { tosh as light, deep as dark } from "@theme-ui/presets"
 import { merge } from "theme-ui"
+import { darken, lighten } from "@theme-ui/color"
 
 import "@fontsource/raleway/700.css"
 import "@fontsource/bitter/700.css"
@@ -17,7 +18,7 @@ const theme = merge(light, {
     },
   },
   sizes: {
-    container: 460,
+    container: 960,
   },
   fonts: {
     body: "'Raleway', sans-serif",
@@ -73,9 +74,23 @@ const theme = merge(light, {
       px: 1,
       borderRadius: 3,
     },
+    inlineCode: {
+      bg: `secondary`,
+      px: 1,
+      borderRadius: 3,
+      color: "text",
+    },
+    em: {
+      color: lighten("text", 0.32),
+      overflowWrap: "break-word",
+    },
     img: {
       width: "100%",
     },
+    input: {
+      fontFamily: "body",
+    },
   },
 })
+console.log(theme)
 export default theme

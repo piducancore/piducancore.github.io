@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { Grid, jsx, Box } from "theme-ui"
 import React, { useState } from "react"
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client"
 import fetch from "isomorphic-fetch"
@@ -15,8 +17,14 @@ export default function Example() {
   const [{ sheetpoem }, setWords] = useState("...")
   return (
     <ApolloProvider client={client}>
-      <Typed words={sheetpoem} />
-      <Form onCompleted={setWords} />
+      <Grid columns={[1, 2]}>
+        <Box>
+          <Typed words={sheetpoem} />
+        </Box>
+        <Box>
+          <Form onCompleted={setWords} />
+        </Box>
+      </Grid>
     </ApolloProvider>
   )
 }
