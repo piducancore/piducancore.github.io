@@ -92,5 +92,5 @@ const theme = merge(light, {
     },
   },
 })
-console.log(theme)
+
 export default theme

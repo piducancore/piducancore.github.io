@@ -17,7 +17,6 @@ export default function Layout(props) {
 
   const { title } = data.site.siteMetadata
 
-  console.log(props)
   return (
     <React.Fragment>
       <Global
