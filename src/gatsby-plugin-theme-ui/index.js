@@ -1,6 +1,7 @@
 import { tosh as light, deep as dark } from "@theme-ui/presets"
 import { merge } from "theme-ui"
-import { darken, lighten } from "@theme-ui/color"
+import { lighten } from "@theme-ui/color"
+import nightOwl from "@theme-ui/prism/presets/night-owl.json"
 
 import "@fontsource/raleway/700.css"
 import "@fontsource/bitter/700.css"
@@ -70,14 +71,14 @@ const theme = merge(light, {
       cursor: "pointer",
     },
     code: {
-      bg: `muted`,
-      px: 1,
-      borderRadius: 3,
+      borderRadius: 4,
+      border: 0,
+      ...nightOwl,
     },
     inlineCode: {
       bg: `secondary`,
       px: 1,
-      borderRadius: 3,
+      borderRadius: 4,
       color: "text",
     },
     em: {
