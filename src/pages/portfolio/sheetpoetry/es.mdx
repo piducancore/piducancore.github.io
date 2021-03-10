@@ -8,29 +8,29 @@ import Example from "../../../components/sheetpoetry"
 
 # sheetpoetry
 
-## What is this?
+## ¿Qué es esto?
 
-This is a GraphQL API to generate poems from randomly selected cells on a Google spreadsheet.
+Esta es una API GraphQL para generar poemas desde celdas seleccionadas al azar en una hoja de cálculo de Google.
 
-## How to use
+## ¿Cómo funciona?
 
-The API takes a query called `sheetpoem` with 3 arguments:
+La API acepta una consulta llamada `sheetpoem` con 3 argumentos:
 
-- `spreadsheetId` (String): The spreadsheet's ID.
-- `range` (String): The range of cells.
-- `verses` (Int): The number of verses.
+- `spreadsheetId` (String): El ID de la hoja de cálculo.
+- `range` (String): El rango de celdas y columnas.
+- `verses` (Int): La cantidad de versos.
 
-The `spreadsheetId` is your spreadsheet's unique identificator. Is the part of the URL selected in the image below and it looks similar to this: _1qjgDw3TREpqQoSSbB0tzd0Joues1jraJix2mU52zToU_.
+El `spreadsheetId` es el identificador único de tu hoja de cálculo. Es la parte de la URL que se muestra seleccionada en la imagen siguiente, y luce similar a esto: _1qjgDw3TREpqQoSSbB0tzd0Joues1jraJix2mU52zToU_.
 
 [![spreadsheet Id](./images/id.gif)](./images/id.gif)
 
-`range` is a selection of rows and cells. For a selection like the one shown below it would be: _A1:D18_.
+`range` es una selección de filas y columnas. Para una selección como la mostrada acontinuación, este sería: _A1:D18_.
 
 [![range](./images/range.gif)](./images/range.gif)
 
-And `verses` is a number, like _1_, _6_ or _3021_, representing how many verses you want your poem to have.
+Y `verses` es un número, como _1_, _6_ o _3021_, y representa cuántos versos quieres que tenga tu poema.
 
-That being said, an example query would look something similar to this:
+Habiendo dicho esto, una consulta de ejemplo luciría algo así:
 
 ```graphql
 query {
@@ -42,10 +42,10 @@ query {
 }
 ```
 
-You can try this query live at the [GraphQL Playground](https://sheetpoetry.now.sh).
+Puedes probar esta consulta en vivo en el [GraphQL Playground](https://sheetpoetry.now.sh).
 
-## Example
+## Ejemplo
 
-For this example we are using [this spreadsheet](https://docs.google.com/spreadsheets/d/1qjgDw3TREpqQoSSbB0tzd0Joues1jraJix2mU52zToU/edit?usp=sharing) with "1000 chilean verses" selected by Felipe Cussen and Marcela Labraña.
+Para este ejemplo usamos [esta hoja de cálculo](https://docs.google.com/spreadsheets/d/1qjgDw3TREpqQoSSbB0tzd0Joues1jraJix2mU52zToU/edit?usp=sharing) con "1000 versos chilenos" seleccionados por Felipe Cussen y Marcela Labraña.
 
 <Example />
