@@ -2,7 +2,7 @@ import Layout from "../../components/Layout"
 import { graphql, Link } from "gatsby"
 
 export default ({ children, ...props }) => {
-  const { nodes } = props.pageResources.json.data.allMdx
+  const { nodes } = props.data.allMdx
   return (
     <Layout>
       {children}
