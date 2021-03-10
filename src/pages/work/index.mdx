@@ -19,7 +19,7 @@ export default ({ children, ...props }) => {
 
 export const pageQuery = graphql`
   query PortfolioQuery {
-    allMdx(filter: { slug: { regex: "/^portfolio/./" } }) {
+    allMdx(filter: { slug: { regex: "/^work/./" } }) {
       nodes {
         slug
       }
