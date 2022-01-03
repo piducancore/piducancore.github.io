@@ -1,14 +1,18 @@
 const fetch = require("node-fetch")
 
 async function fetchRepos() {
-  const apiUrl = "https://api.github.com/search/repositories?q="
-  const query = "user:piducancore&per_page=100"
-  const result = await fetch(apiUrl + query, {
-    headers: {
-      Authorization: "token " + process.env.GH_ACCESS_TOKEN,
-    },
-  })
-  return await result.json()
+  try {
+    const apiUrl = "https://api.github.com/search/repositories?q="
+    const query = "user:piducancore&per_page=100"
+    const result = await fetch(apiUrl + query, {
+      headers: {
+        Authorization: "token " + process.env.GH_ACCESS_TOKEN,
+      },
+    })
+    return await result.json()
+  } catch (error) {
+    console.error(error)
+  }
 }
 
 exports.sourceNodes = async (gatsby, options) => {
