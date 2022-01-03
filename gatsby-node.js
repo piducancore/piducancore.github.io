@@ -9,7 +9,6 @@ async function fetchRepos() {
         Authorization: "token " + process.env.GH_ACCESS_TOKEN,
       },
     })
-    console.log(process.env)
     return await result.json()
   } catch (error) {
     console.error(error)
