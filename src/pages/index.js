@@ -1,24 +1,17 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx, Themed } from "theme-ui"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-function byDate(a, b) {
-  const keyA = new Date(a.created_at)
-  const keyB = new Date(b.created_at)
-  if (keyA < keyB) return 1
-  if (keyA > keyB) return -1
-  return 0
-}
-
-const Index = ({ serverData }) => {
+export default function IndexPage({ data }) {
   return (
     <Layout>
       <Seo title="My resume" />
       <Themed.h1>My work</Themed.h1>
-      {serverData.items.sort(byDate).map(node => {
+      {data.allGitHubRepo.nodes.map(node => {
         const {
           id,
           name,
@@ -49,10 +42,8 @@ const Index = ({ serverData }) => {
               </Themed.p>
             </div>
             {topics.map(tag => (
-              <React.Fragment>
-                <small key={tag} sx={{ bg: "muted", px: 2 }}>
-                  {tag}
-                </small>{" "}
+              <React.Fragment key={tag}>
+                <small sx={{ bg: "muted", px: 2 }}>{tag}</small>{" "}
               </React.Fragment>
             ))}
             <Themed.p>{description}</Themed.p>
@@ -77,30 +68,18 @@ const Index = ({ serverData }) => {
   )
 }
 
-export default Index
-
-export async function getServerData() {
-  try {
-    const res = await fetch(
-      "https://api.github.com/search/repositories?q=user:piducancore&per_page=100",
-      {
-        headers: {
-          Authorization: "token " + process.env.GATSBY_GH_ACCESS_TOKEN,
-        },
+export const query = graphql`
+  query IndexQuery {
+    allGitHubRepo(sort: { fields: created_at, order: DESC }) {
+      nodes {
+        id
+        name
+        html_url
+        homepage
+        description
+        topics
+        created_at
       }
-    )
-    if (!res.ok) {
-      throw new Error(`Response failed`)
-    }
-    return {
-      props: await res.json(),
-    }
-  } catch (error) {
-    return {
-      headers: {
-        status: 500,
-      },
-      props: {},
     }
   }
-}
+`
