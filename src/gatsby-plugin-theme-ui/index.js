@@ -34,6 +34,7 @@ const theme = merge(base, {
   styles: {
     a: {
       textDecoration: "none",
+      fontWeight: "bold",
       ":hover": {
         color: "secondary",
       },

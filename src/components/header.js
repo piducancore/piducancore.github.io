@@ -11,6 +11,7 @@ const Header = ({ siteTitle }) => (
   >
     <Container>
       <Themed.h1>
+        Hey, my name is{" "}
         <Themed.a as={Link} to="/">
           {siteTitle}
         </Themed.a>

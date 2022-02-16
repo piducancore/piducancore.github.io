@@ -2,7 +2,7 @@
 import { jsx, Container, Themed } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+// import Header from "./header"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(
@@ -24,9 +24,11 @@ const Layout = ({ children }) => {
         flexDirection: "column",
         minHeight: "100vh",
         variant: "layout.root",
+        // width: "21cm",
+        // height: "29.7cm",
       }}
     >
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <main sx={{ width: "100%", flex: "1 1 auto", variant: "layout.main" }}>
         <Container>{children}</Container>
       </main>
