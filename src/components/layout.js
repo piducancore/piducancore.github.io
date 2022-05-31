@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       }}
     >
       {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
-      <main sx={{ width: "100%", flex: "1 1 auto", variant: "layout.main" }}>
+      <main sx={{ variant: "layout.main" }}>
         <Container>{children}</Container>
       </main>
       <footer sx={{ width: "100%", variant: "layout.footer" }}>

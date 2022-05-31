@@ -40,8 +40,8 @@ export default function IndexPage({ data }) {
       <Seo title="Rodrigo Moreira (@piducancore) - Software Developer" />
       <Themed.h1>
         Hey, my name is{" "}
-        <Themed.a as={Link} to="/">
-          Rodrigo{" "}
+        <Themed.a as={Link} to="/resume">
+          Rodrigo 📝{" "}
         </Themed.a>
       </Themed.h1>
       <Themed.p>

@@ -9,7 +9,7 @@ const theme = merge(base, {
     primary: "#6d2f9c",
     secondary: "#ffae1e",
   },
-  fontSizes: [12, 14, 16, 22, 24, 32, 48, 64, 96],
+  fontSizes: [12, 14, 16, 18, 22, 32, 48, 64, 96],
   fonts: {
     heading: `'Saira', sans-serif`,
     body: `'Saira', sans-serif`,
@@ -19,11 +19,16 @@ const theme = merge(base, {
     body: 400,
   },
   sizes: {
-    container: 480,
+    // container: 480,
   },
   layout: {
     header: {},
-    main: {},
+    main: {
+      width: "100%",
+      flex: "1 1 auto",
+      display: "flex",
+      flexDirection: "column",
+    },
     footer: { textAlign: "center" },
     container: {
       maxWidth: "container",
@@ -32,6 +37,7 @@ const theme = merge(base, {
     },
   },
   styles: {
+    root: { bg: "muted" },
     a: {
       textDecoration: "none",
       fontWeight: "bold",
@@ -40,7 +46,8 @@ const theme = merge(base, {
       },
     },
     p: {
-      fontSize: 3,
+      // fontSize: 3,
+      my: 2,
     },
   },
 })
