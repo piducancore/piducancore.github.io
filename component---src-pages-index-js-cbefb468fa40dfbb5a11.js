@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_favorite_seed=self.webpackChunkmy_favorite_seed||[]).push([[678],{6558:function(e,n,t){t.r(n),n.default=function(){return"undefined"==typeof window?null:window.location.assign("https://github.com/piducancore")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-cbefb468fa40dfbb5a11.js.map

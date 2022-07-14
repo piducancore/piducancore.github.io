@@ -1,0 +1,12 @@
+{
+  "name": "homepage",
+  "description": "this is here because of the backend fcc challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "piducancore",
+  "keywords": [ "freecodecamp", "backend", "challenges" ],
+  "dependencies": {
+    "moment": "~2.10.2"
+  }
+}

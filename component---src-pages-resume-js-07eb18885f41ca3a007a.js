@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_favorite_seed=self.webpackChunkmy_favorite_seed||[]).push([[903],{9023:function(e,n,t){t.r(n),n.default=function(){return"undefined"==typeof window?null:window.location.assign("https://docs.google.com/document/d/1Y_XaqGZBEHZZttAVhB8lPP7fAy2B76EpTzD77WQ3SQw/edit?usp=sharing")}}}]);
+//# sourceMappingURL=component---src-pages-resume-js-07eb18885f41ca3a007a.js.map
