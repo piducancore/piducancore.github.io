@@ -5,5 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "author": "piducancore",
-  "keywords": [ "freecodecamp", "backend", "challenges" ]
+  "keywords": [ "freecodecamp", "backend", "challenges" ],
+  "dependencies": {
+    "moment": "2.14.0"
+  }
 }
