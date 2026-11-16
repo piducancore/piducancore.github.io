@@ -30,3 +30,5 @@ The projects are things the owner enjoyed building and technologies they wanted 
 Use actual project UI screenshots from the child sites for project imagery. Do not substitute decorative abstract illustrations.
 
 Chosen visual direction: Graphite palette + Drafting typography. Use neutral warm paper/charcoal surfaces, monochrome controls, technical monospace headings and labels, and Archivo descriptions.
+
+Voice should express curiosity and enjoyment through concrete details. Plain language need not be dry: sound, poems from spreadsheets, and maps of completos provide personality without hype. Avoid repetitive introductions and defensive framing about project age or sophistication.
