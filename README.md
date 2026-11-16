@@ -1,42 +1,71 @@
-# Portfolio Blog Starter
+# piducan.dev
 
-This is a porfolio site template complete with a blog. Includes:
+Personal project collection for **piducancore**. Live at https://piducan.dev/.
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+## Develop
 
-## Demo
+Node 22 or later. The site has no runtime or build dependencies.
 
-https://portfolio-blog-starter.vercel.app
-
-## How to Use
-
-You can choose from one of the following two methods to use this repository:
-
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
-
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
+```sh
+npm ci
+npm run dev
 ```
 
-Then, run Next.js in development mode:
+Open http://127.0.0.1:4321/. The development server rebuilds on page navigation;
+refresh the browser after edits. `npm run preview` serves a fixed production build.
 
-```bash
-pnpm dev
+```sh
+npm test
+npm run build
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+## Edit the collection
+
+Edit `src/projects.mjs` to add or change projects. Keep descriptions factual and
+use verified public URLs. Projects without a verified live site link to their
+source repository. `featured: true` selects the audio features; `downloads`
+adds a project to the downloads hub. Project artwork lives in `src/render.mjs`.
+
+- `src/render.mjs`: semantic page templates and geometric artwork.
+- `public/assets/style.css`: responsive design system.
+- `public/assets/site.js`: progressive enhancement for filtering and signal remix.
+- `scripts/build.mjs`: explicit static output, custom domain, sitemap, robots.
+- `tests/site.test.mjs`: routing boundaries, no-JS discovery, escaping, build assets.
+- `PRODUCT.md`, `DESIGN.md`, `.impeccable/`: product facts and design documentation.
+
+## Hosting and release boundaries
+
+This is the account site repository, `piducancore/piducancore.github.io`.
+GitHub Pages uses **GitHub Actions** and the existing custom domain **piducan.dev**.
+The Website workflow tests and builds pull requests; main-branch pushes and manual
+runs publish `dist/`. Only public build output is uploaded. Project documentation,
+local paths, and design working files never ship.
+
+The root build owns `/`, `/downloads/`, `/404.html`, and root assets. It does not
+create folders or redirects for other project sites:
+
+| Path | Owner |
+| --- | --- |
+| `/picadura/` | `piducancore/picadura` |
+| `/buffer-uppercut/` | `piducancore/buffer-uppercut` |
+| `/orgdot-webfonts/` | `piducancore/orgdot-webfonts` |
+
+Those repositories keep their own Pages builds, GitHub Releases, release workflows,
+and download catalogs. The root downloads hub links to those catalogs instead of
+copying version numbers or binary URLs, so new releases require no root-site update.
+Do not replace the account Pages domain, add catch-all routing, or publish the
+projects' folders from this repository.
+
+## Fonts and privacy
+
+Archivo and Unbounded are self-hosted under the SIL Open Font License. License
+texts ship beside the font files in `public/assets/`. Fonts were sourced from
+Google Fonts; see `public/assets/SOURCES.md`. All artwork is original geometric
+SVG, not a representation of a plugin's interface. No analytics, cookies, remote
+font requests, client-side GitHub API calls, or autoplay audio.
+
+## Rollback
+
+Revert the relevant commit on `main`; the Website workflow republishes that version.
+The earlier starter is retained in Git history. The old sample blog posts were
+unmodified template content and are not represented as personal writing.
