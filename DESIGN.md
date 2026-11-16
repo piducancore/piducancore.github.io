@@ -193,3 +193,6 @@ A paper-colored remix pill sits in a lavender field. Hover reverses it to ink an
 - Don't add shadows to the existing flat component patterns.
 - Don't introduce brand slogans or promotional filler.
 - Don't apply this hub's design to independently maintained project sites without a separate redesign brief.
+
+## Voice
+Write as a person sharing things they enjoyed making. Explain what a project does and, when known, what interested the owner about it. Avoid sales pitches, superlatives, claims of genius, and self-deprecation.

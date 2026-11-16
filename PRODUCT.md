@@ -24,3 +24,5 @@ Lead with actual work. Keep source and downloads easy to find. Preserve independ
 
 ## Personal identity and voice
 Use piducancore as the visible identity in navigation, page titles, and profile links. piducan.dev is the domain, not a brand name. Keep a playful interaction or illustration, but use restrained typography, muted artwork colors, and direct first-person copy. Avoid slogans, company language, and promotional filler.
+
+The projects are things the owner enjoyed building and technologies they wanted to explore, not products to sell. Describe what each does without claims of brilliance, novelty, superiority, or impact. No salesman copy, hype, or brand voice. Do not overcorrect into self-deprecation or disclaimers about quality.
