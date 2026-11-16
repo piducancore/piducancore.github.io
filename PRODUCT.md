@@ -28,3 +28,5 @@ Use piducancore as the visible identity in navigation, page titles, and profile 
 The projects are things the owner enjoyed building and technologies they wanted to explore, not products to sell. Describe what each does without claims of brilliance, novelty, superiority, or impact. No salesman copy, hype, or brand voice. Do not overcorrect into self-deprecation or disclaimers about quality.
 
 Use actual project UI screenshots from the child sites for project imagery. Do not substitute decorative abstract illustrations.
+
+Chosen visual direction: Graphite palette + Drafting typography. Use neutral warm paper/charcoal surfaces, monochrome controls, technical monospace headings and labels, and Archivo descriptions.

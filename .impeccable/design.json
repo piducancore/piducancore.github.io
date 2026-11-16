@@ -3,118 +3,7 @@
   "generatedAt": "2026-11-16T19:47:55.180287+00:00",
   "title": "Design System: piducancore",
   "extensions": {
-    "colorMeta": {
-      "blue": {
-        "role": "primary",
-        "displayName": "Signal blue",
-        "tonalRamp": [
-          "oklch(15% 0.0618 268.78)",
-          "oklch(27% 0.1275 268.78)",
-          "oklch(39% 0.1753 268.78)",
-          "oklch(51% 0.1984 268.78)",
-          "oklch(63% 0.1937 268.78)",
-          "oklch(75% 0.1618 268.78)",
-          "oklch(87% 0.1072 268.78)",
-          "oklch(95% 0.0618 268.78)"
-        ]
-      },
-      "lilac": {
-        "role": "secondary",
-        "displayName": "Lavender"
-      },
-      "orange": {
-        "role": "tertiary",
-        "displayName": "Muted clay"
-      },
-      "green": {
-        "role": "secondary",
-        "displayName": "Pale green"
-      },
-      "paper": {
-        "role": "neutral",
-        "displayName": "Paper",
-        "tonalRamp": [
-          "oklch(15% 0.0020 106.52)",
-          "oklch(27% 0.0042 106.52)",
-          "oklch(39% 0.0058 106.52)",
-          "oklch(51% 0.0066 106.52)",
-          "oklch(63% 0.0064 106.52)",
-          "oklch(75% 0.0053 106.52)",
-          "oklch(87% 0.0035 106.52)",
-          "oklch(95% 0.0020 106.52)"
-        ]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Ink",
-        "tonalRamp": [
-          "oklch(15% 0.0036 128.98)",
-          "oklch(27% 0.0075 128.98)",
-          "oklch(39% 0.0103 128.98)",
-          "oklch(51% 0.0117 128.98)",
-          "oklch(63% 0.0114 128.98)",
-          "oklch(75% 0.0095 128.98)",
-          "oklch(87% 0.0063 128.98)",
-          "oklch(95% 0.0036 128.98)"
-        ]
-      },
-      "muted": {
-        "role": "neutral",
-        "displayName": "Muted ink",
-        "tonalRamp": [
-          "oklch(15% 0.0043 133.49)",
-          "oklch(27% 0.0089 133.49)",
-          "oklch(39% 0.0123 133.49)",
-          "oklch(51% 0.0139 133.49)",
-          "oklch(63% 0.0136 133.49)",
-          "oklch(75% 0.0113 133.49)",
-          "oklch(87% 0.0075 133.49)",
-          "oklch(95% 0.0043 133.49)"
-        ]
-      },
-      "line": {
-        "role": "neutral",
-        "displayName": "Fine line",
-        "tonalRamp": [
-          "oklch(15% 0.0039 121.74)",
-          "oklch(27% 0.0081 121.74)",
-          "oklch(39% 0.0112 121.74)",
-          "oklch(51% 0.0126 121.74)",
-          "oklch(63% 0.0123 121.74)",
-          "oklch(75% 0.0103 121.74)",
-          "oklch(87% 0.0068 121.74)",
-          "oklch(95% 0.0039 121.74)"
-        ]
-      },
-      "warm-ink": {
-        "role": "neutral",
-        "displayName": "Warm ink",
-        "tonalRamp": [
-          "oklch(15% 0.0118 37.68)",
-          "oklch(27% 0.0244 37.68)",
-          "oklch(39% 0.0335 37.68)",
-          "oklch(51% 0.0379 37.68)",
-          "oklch(63% 0.0370 37.68)",
-          "oklch(75% 0.0309 37.68)",
-          "oklch(87% 0.0205 37.68)",
-          "oklch(95% 0.0118 37.68)"
-        ]
-      },
-      "white": {
-        "role": "neutral",
-        "displayName": "Action white",
-        "tonalRamp": [
-          "oklch(15% 0.0000 89.88)",
-          "oklch(27% 0.0000 89.88)",
-          "oklch(39% 0.0000 89.88)",
-          "oklch(51% 0.0000 89.88)",
-          "oklch(63% 0.0000 89.88)",
-          "oklch(75% 0.0000 89.88)",
-          "oklch(87% 0.0000 89.88)",
-          "oklch(95% 0.0000 89.88)"
-        ]
-      }
-    },
+    "colorMeta": {},
     "typographyMeta": {
       "display": {
         "displayName": "Regular headline",
@@ -172,94 +61,45 @@
       "default": "system",
       "storageKey": "piducan-theme",
       "dark": {
-        "paper": "#191b20",
-        "ink": "#f0f0e9",
-        "muted": "#b5b8b0",
-        "line": "#42464d",
-        "blue": "#b5a6ff",
-        "action-text": "#191b20",
-        "about-ground": "#191b20"
+        "paper": "#1c1e1b",
+        "ink": "#eeeee7",
+        "muted": "#b6b9af",
+        "line": "#454941",
+        "action-text": "#1c1e1b",
+        "about-ground": "#191b20",
+        "accent": "#d4d8c9"
       },
       "artwork": "Actual UI screenshots retain their original colors in both themes."
     }
   },
-  "components": [
-    {
-      "name": "Primary action",
-      "kind": "button",
-      "refersTo": "button-primary",
-      "description": "The download action with explicit text and a trailing icon.",
-      "html": "<a class=\"ds-primary\" href=\"#downloads\">View downloads <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></a>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;gap:15px;padding:13px 20px;border-radius:4px;background:var(--blue,#293ccb);color:#fff;text-decoration:none;font:700 14px/1.55 var(--body,Archivo,Arial,sans-serif)}.ds-primary svg{width:20px;height:20px}.ds-primary:hover{background:var(--ink,#22251f);color:#fff}.ds-primary:focus-visible{outline:3px solid var(--blue,#293ccb);outline-offset:5px}"
-    },
-    {
-      "name": "Text action",
-      "kind": "custom",
-      "description": "Inline exploration links without a button surface.",
-      "html": "<a class=\"ds-text\" href=\"#projects\">Explore project <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></a>",
-      "css": ".ds-text{display:inline-flex;align-items:center;gap:12px;color:var(--ink,#22251f);font:700 14px/1.55 var(--body,Archivo,Arial,sans-serif);text-decoration:none;text-underline-offset:4px}.ds-text svg{width:20px;height:20px}.ds-text:hover{color:var(--blue,#293ccb);text-decoration:underline}.ds-text:focus-visible{outline:3px solid var(--blue,#293ccb);outline-offset:5px}"
-    },
-    {
-      "name": "Project filters",
-      "kind": "chip",
-      "refersTo": "filter",
-      "description": "Category pills with visible selection and a count.",
-      "html": "<div class=\"ds-filters\"><button type=\"button\" aria-pressed=\"true\">All <span>8</span></button><button type=\"button\" aria-pressed=\"false\">Audio <span>2</span></button></div>",
-      "css": ".ds-filters{display:flex;flex-wrap:wrap;gap:8px}.ds-filters button{display:flex;gap:15px;min-height:42px;border:1px solid var(--line,#c9ccc3);padding:8px 17px;border-radius:30px;background:transparent;color:var(--ink,#22251f);font:400 14px/1.55 var(--body,Archivo,Arial,sans-serif);cursor:pointer}.ds-filters span{opacity:.7}.ds-filters button[aria-pressed=true]{background:var(--ink,#22251f);border-color:var(--ink,#22251f);color:var(--paper,#f5f5f0)}.ds-filters button:hover{border-color:var(--ink,#22251f)}.ds-filters button:focus-visible{outline:3px solid var(--blue,#293ccb);outline-offset:5px}"
-    },
-    {
-      "name": "Circular project link",
-      "kind": "custom",
-      "refersTo": "row-link",
-      "description": "A compact destination link at the edge of project rows.",
-      "html": "<a class=\"ds-row-link\" href=\"#project\" aria-label=\"Visit project\"><svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></a>",
-      "css": ".ds-row-link{height:44px;width:44px;display:grid;place-items:center;border:1px solid var(--line,#c9ccc3);border-radius:50%;color:var(--ink,#22251f);transition:background .2s,color .2s}.ds-row-link svg{width:20px;height:20px}.ds-row-link:hover{color:var(--paper,#f5f5f0);background:var(--blue,#293ccb);border-color:var(--blue,#293ccb)}.ds-row-link:focus-visible{outline:3px solid var(--blue,#293ccb);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-row-link{transition:none}}"
-    },
-    {
-      "name": "Main navigation",
-      "kind": "nav",
-      "description": "Visible text navigation with underlined current and hover states.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Example navigation\"><a href=\"#projects\">Projects</a><a href=\"#downloads\" aria-current=\"page\">Downloads</a><a href=\"#about\">About</a></nav>",
-      "css": ".ds-nav{display:flex;flex-wrap:wrap;gap:32px;align-items:center}.ds-nav a{font:400 15px/1.55 var(--body,Archivo,Arial,sans-serif);color:var(--ink,#22251f);text-decoration:none;text-underline-offset:4px}.ds-nav a:hover{color:var(--blue,#293ccb);text-decoration:underline}.ds-nav a[aria-current]{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid var(--blue,#293ccb);outline-offset:5px}"
-    }
-  ],
+  "components": [],
   "narrative": {
     "northStar": "A personal software index",
-    "overview": "A personal index with restrained Archivo typography, actual project UI screenshots, and direct descriptions of real projects. Visible identity is piducancore; piducan.dev is the address. Avoid brand slogans and decorative placeholder artwork.",
+    "overview": "Graphite neutral palette with Drafting monospace headings and technical labels, Archivo body text, and actual project screenshots.",
     "keyCharacteristics": [
-      "Regular-weight headlines and bold, compact identity in Archivo.",
+      "Drafting monospace headings and labels with readable Archivo descriptions.",
       "Uncropped UI screenshots reused from the child project sites.",
       "Flat surfaces, fine separators, and explicit text actions.",
       "Responsive reflow with visible keyboard focus and reduced-motion support."
     ],
     "rules": [
       {
-        "name": "The Field Rule",
-        "body": "Give expressive color a complete surface; keep the surrounding project information on paper.",
-        "section": "colors"
+        "name": "Actual work",
+        "body": "Use real UI screenshots, factual descriptions, and explicit links.",
+        "section": "imagery"
       },
       {
         "name": "Type hierarchy",
-        "body": "Use regular Archivo for the main headline and bold Archivo for identity, section headings, and project names.",
+        "body": "Use drafting monospace headings and labels with Archivo descriptions.",
         "section": "typography"
-      },
-      {
-        "name": "The Flat Surface Rule",
-        "body": "Use color and spacing for separation; do not add shadows to these existing patterns.",
-        "section": "elevation"
       }
     ],
     "dos": [
-      "Do use large color fields and precise vector geometry for expressive material.",
-      "Do keep titles, descriptions, and destination links readable independently of artwork.",
-      "Do preserve explicit keyboard focus and visible navigation at narrow widths.",
-      "Do let layouts and action groups reflow instead of clipping content."
+      "Use consistent section spacing and grouped metadata.",
+      "Preserve complete screenshots and visible keyboard focus."
     ],
     "donts": [
-      "Don't imply that abstract signal artwork is actual plugin output or interface imagery.",
-      "Don't add shadows to the existing flat component patterns.",
-      "Do not introduce brand slogans or promotional filler.",
-      "Don't apply this hub's design to independently maintained project sites without a separate redesign brief."
+      "Do not add promotional copy or decorative artwork."
     ]
   }
 }
