@@ -32,3 +32,5 @@ Use actual project UI screenshots from the child sites for project imagery. Do n
 Chosen visual direction: Graphite palette + Drafting typography. Use neutral warm paper/charcoal surfaces, monochrome controls, technical monospace headings and labels, and Archivo descriptions.
 
 Voice should express curiosity and enjoyment through concrete details. Plain language need not be dry: sound, poems from spreadsheets, and maps of completos provide personality without hype. Avoid repetitive introductions and defensive framing about project age or sophistication.
+
+Public introduction: developer and beatmaker. The owner returned to Ableton Live and built Picadura and Buffer Uppercut using Codex. Keep the site focused on music and projects; private work and wellbeing context is not public biography. Do not add publishing commitments or placeholders for unreleased music.
