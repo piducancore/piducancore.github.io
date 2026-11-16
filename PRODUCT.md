@@ -17,7 +17,10 @@ Inferred from the brief: curious visitors, musicians looking for plugins, and de
 Preserve the account Pages domain piducan.dev and independent project sites including /picadura/, /buffer-uppercut/, and /orgdot-webfonts/. Project repositories own releases, binary publishing, installation instructions, and their own deployments. The homepage must not claim or publish unreleased binaries. The user delegated implementation and visual decisions, explicitly discarding the existing projects' visual styling.
 
 ## Evidence on Hand
-Public repositories at github.com/piducancore and local project READMEs under /Users/piducancore/CODE/audio-programming. The current root repository contains starter content, not authored personal essays. GitHub username: piducancore.
+Public repositories at github.com/piducancore and local project READMEs under /Users/piducancore/CODE/audio-programming. The original starter essays were removed; they were not personal writing. GitHub username: piducancore.
 
 ## Product Principles
 Lead with actual work. Keep source and downloads easy to find. Preserve independent project publishing. Avoid invented biography or product claims.
+
+## Personal identity and voice
+Use piducancore as the visible identity in navigation, page titles, and profile links. piducan.dev is the domain, not a brand name. Keep a playful interaction or illustration, but use restrained typography, muted artwork colors, and direct first-person copy. Avoid slogans, company language, and promotional filler.

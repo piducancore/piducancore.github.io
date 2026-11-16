@@ -1,11 +1,11 @@
 ---
-name: piducan.dev
+name: piducancore
 description: An expressive collection of software, sound, and experiments.
 colors:
   blue: "#293ccb"
-  lilac: "#d4c7fa"
-  orange: "#ff5e25"
-  green: "#d8e5ba"
+  lilac: "#d8d4e5"
+  orange: "#c9a28b"
+  green: "#d9dfcf"
   paper: "#f5f5f0"
   ink: "#22251f"
   muted: "#5b6058"
@@ -20,14 +20,14 @@ colors:
   dark-about: "#302a43"
 typography:
   display:
-    fontFamily: "Unbounded, Arial, sans-serif"
-    fontSize: "clamp(36px, 5.1vw, 74px)"
-    fontWeight: 700
-    lineHeight: 1.13
+    fontFamily: "Archivo, Arial, sans-serif"
+    fontSize: "clamp(38px, 4.8vw, 66px)"
+    fontWeight: 400
+    lineHeight: 1.12
     letterSpacing: "-0.035em"
   headline:
-    fontFamily: "Unbounded, Arial, sans-serif"
-    fontSize: "30px"
+    fontFamily: "Archivo, Arial, sans-serif"
+    fontSize: "26px"
     fontWeight: 700
     lineHeight: 1.25
     letterSpacing: "-0.03em"
@@ -87,19 +87,19 @@ components:
     height: "44px"
 ---
 
-# Design System: piducan.dev
+# Design System: piducancore
 
 ## Overview
 
-**Creative North Star: "An experimental music publication"**
+**Creative North Star: "A personal software index"**
 
-Wide, heavy lettering and geometric signal art give this collection its own voice. Quiet paper supports legible project information; broad color fields give the expressive material room. The system is flat, direct, and playful without imitating the interfaces of the audio tools it presents.
+Regular-weight Archivo headlines and geometric signal art give this collection its own voice. Quiet paper supports legible project information; broad color fields give the expressive material room. The system is flat, direct, and playful without imitating the interfaces of the audio tools it presents.
 
 Dense lists and spacious features share the same type, palette, and link language. The existing project sites retain independent identities; this system describes the personal hub, not a retroactive redesign of those products.
 
 **Key Characteristics:**
 
-- Wide display lettering paired with plain, readable body type.
+- Restrained Archivo hierarchy with plain, readable body type.
 - Lavender, green, and orange fields with crisp vector geometry.
 - Flat surfaces, fine separators, and explicit text actions.
 - Responsive reflow with visible keyboard focus and reduced-motion support.
@@ -112,7 +112,7 @@ Dense lists and spacious features share the same type, palette, and link languag
 
 ### Secondary
 
-**Lavender** carries large expressive surfaces. **Pale green** and **hot orange** distinguish project artwork. Green pairs with blue linework; orange pairs with warm ink. Their purpose is page-scale material, not a collection of small status badges.
+**Lavender** carries large expressive surfaces. **Pale green** and **muted clay** distinguish project artwork. Green pairs with blue linework; orange pairs with warm ink. Their purpose is page-scale material, not a collection of small status badges.
 
 ### Neutral
 
@@ -122,15 +122,15 @@ Dense lists and spacious features share the same type, palette, and link languag
 
 ### Dark theme
 
-Dark mode uses charcoal reading surfaces, pale text, muted secondary text, and a lavender interactive accent. The about section becomes a deep violet surface. Artwork keeps its original colors and dark linework; primary buttons use dark text on lavender. System is the default and follows live operating-system changes. Explicit Light or Dark choices persist locally and apply before rendering. The native theme selector appears on every page, beside the wordmark on mobile.
+Dark mode uses charcoal reading surfaces, pale text, muted secondary text, and a lavender interactive accent. The about section shares the page ground and uses a fine top rule. Artwork keeps its original colors and dark linework; primary buttons use dark text on lavender. System is the default and follows live operating-system changes. Explicit Light or Dark choices persist locally and apply before rendering. The native theme selector appears on every page, beside the wordmark on mobile.
 
 ## Typography
 
-Unbounded is the self-hosted display face. Archivo is the self-hosted reading and action face. Arial and sans-serif remain fallbacks, not the intended display identity. Regular and bold weights are sufficient; there is no decorative monospace role.
+Archivo is the self-hosted face for headings, identity, reading, and actions. Arial and sans-serif remain fallbacks, not the intended display identity. Regular and bold weights are sufficient; there is no decorative monospace role.
 
-The frontmatter records the desktop hierarchy. Project-list titles use a smaller title size (22px). The main display contracts at tablet widths, then uses a mobile range of 34–52px; below 430px it settles at 34px with 1.2 line height. Section headings become 25px on mobile and 23px in compact heading rows. Body copy is generally 16–17px, with shorter list summaries at 14–15px. General paragraph measure is capped at 70ch; feature summaries are intentionally shorter.
+The frontmatter records the desktop hierarchy. Project-list titles use 22px. The main headline uses 40px on mobile and 36px below 430px. Section headings use 25–26px. Body copy is generally 16–17px, with shorter list summaries at 14–15px. General paragraph measure is capped at 70ch; feature summaries are intentionally shorter.
 
-**The Two Voices Rule.** Use Unbounded for the site identity and section hierarchy; use Archivo for project names, descriptions, metadata, and controls.
+**The Type Hierarchy Rule.** Use regular Archivo for the main headline and bold Archivo for identity, section headings, and project names.
 
 ## Layout
 
@@ -168,11 +168,11 @@ Outlined pills show a category and its count. Selected state reverses to ink wit
 
 ### Project features and rows
 
-Feature artwork sits above an unboxed name, description, and explicit project/download links. Artwork hover enlarges and rotates the geometry slightly over 650ms with exponential ease-out. Index rows use fine top separators and a circular 44px destination link; its hover changes to blue with paper-colored artwork. Link transitions take 200ms.
+Feature artwork sits above an unboxed name, description, and explicit project/download links. Artwork hover enlarges the geometry by 2.5% over 650ms with exponential ease-out. Index rows use fine top separators and a circular 44px destination link; its hover changes to blue with paper-colored artwork. Link transitions take 200ms.
 
 ### Navigation
 
-The wordmark uses the display face with a blue domain suffix. Navigation is small Archivo text with no resting underline; hover and the current page introduce an underline. It stays visible on mobile.
+The header and footer identify the person as piducancore in bold Archivo. The domain is an address, not a brand. Navigation is small Archivo text with no resting underline; hover and the current page introduce an underline. It stays visible on mobile.
 
 ### Signal control
 
@@ -191,5 +191,5 @@ A paper-colored remix pill sits in a lavender field. Hover reverses it to ink an
 
 - Don't imply that abstract signal artwork is actual plugin output or interface imagery.
 - Don't add shadows to the existing flat component patterns.
-- Don't replace the self-hosted display face with a system font as the intended identity.
+- Don't introduce brand slogans or promotional filler.
 - Don't apply this hub's design to independently maintained project sites without a separate redesign brief.

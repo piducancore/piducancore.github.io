@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-11-16T19:47:55.180287+00:00",
-  "title": "Design System: piducan.dev",
+  "title": "Design System: piducancore",
   "extensions": {
     "colorMeta": {
       "blue": {
@@ -20,45 +20,15 @@
       },
       "lilac": {
         "role": "secondary",
-        "displayName": "Lavender",
-        "tonalRamp": [
-          "oklch(15% 0.0220 296.55)",
-          "oklch(27% 0.0454 296.55)",
-          "oklch(39% 0.0625 296.55)",
-          "oklch(51% 0.0707 296.55)",
-          "oklch(63% 0.0690 296.55)",
-          "oklch(75% 0.0577 296.55)",
-          "oklch(87% 0.0382 296.55)",
-          "oklch(95% 0.0220 296.55)"
-        ]
+        "displayName": "Lavender"
       },
       "orange": {
         "role": "tertiary",
-        "displayName": "Hot orange",
-        "tonalRamp": [
-          "oklch(15% 0.0618 37.98)",
-          "oklch(27% 0.1275 37.98)",
-          "oklch(39% 0.1753 37.98)",
-          "oklch(51% 0.1984 37.98)",
-          "oklch(63% 0.1937 37.98)",
-          "oklch(75% 0.1618 37.98)",
-          "oklch(87% 0.1072 37.98)",
-          "oklch(95% 0.0618 37.98)"
-        ]
+        "displayName": "Muted clay"
       },
       "green": {
         "role": "secondary",
-        "displayName": "Pale green",
-        "tonalRamp": [
-          "oklch(15% 0.0181 121.25)",
-          "oklch(27% 0.0374 121.25)",
-          "oklch(39% 0.0514 121.25)",
-          "oklch(51% 0.0582 121.25)",
-          "oklch(63% 0.0568 121.25)",
-          "oklch(75% 0.0474 121.25)",
-          "oklch(87% 0.0314 121.25)",
-          "oklch(95% 0.0181 121.25)"
-        ]
+        "displayName": "Pale green"
       },
       "paper": {
         "role": "neutral",
@@ -147,7 +117,7 @@
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Wide display",
+        "displayName": "Regular headline",
         "purpose": "Primary headlines and site identity."
       },
       "headline": {
@@ -172,7 +142,7 @@
       {
         "name": "artwork-hover",
         "value": "transform .65s cubic-bezier(.16,1,.3,1)",
-        "purpose": "Slight enlargement and rotation of project geometry on hover."
+        "purpose": "Subtle 2.5% enlargement of project geometry on hover."
       },
       {
         "name": "row-link-hover",
@@ -213,7 +183,7 @@
         "line": "#42464d",
         "blue": "#b5a6ff",
         "action-text": "#191b20",
-        "about-ground": "#302a43"
+        "about-ground": "#191b20"
       },
       "artwork": "Preserve original light-theme color fields and linework in both themes."
     }
@@ -267,11 +237,11 @@
     }
   ],
   "narrative": {
-    "northStar": "An experimental music publication",
-    "overview": "Wide, heavy lettering and geometric signal art give this collection its own voice. Quiet paper supports legible project information; broad color fields give the expressive material room. The system is flat, direct, and playful without imitating the interfaces of the audio tools it presents.\n\nDense lists and spacious features share the same type, palette, and link language. The existing project sites retain independent identities; this system describes the personal hub, not a retroactive redesign of those products.",
+    "northStar": "A personal software index",
+    "overview": "A personal index with restrained Archivo typography, muted geometric artwork, and direct descriptions of real projects. Visible identity is piducancore; piducan.dev is the address. Keep the remix interaction and avoid brand slogans.",
     "keyCharacteristics": [
-      "Wide display lettering paired with plain, readable body type.",
-      "Lavender, green, and orange fields with crisp vector geometry.",
+      "Regular-weight headlines and bold, compact identity in Archivo.",
+      "Muted lavender, sage, and clay fields with crisp vector geometry.",
       "Flat surfaces, fine separators, and explicit text actions.",
       "Responsive reflow with visible keyboard focus and reduced-motion support."
     ],
@@ -282,8 +252,8 @@
         "section": "colors"
       },
       {
-        "name": "The Two Voices Rule",
-        "body": "Use Unbounded for the site identity and section hierarchy; use Archivo for project names, descriptions, metadata, and controls.",
+        "name": "Type hierarchy",
+        "body": "Use regular Archivo for the main headline and bold Archivo for identity, section headings, and project names.",
         "section": "typography"
       },
       {
@@ -301,7 +271,7 @@
     "donts": [
       "Don't imply that abstract signal artwork is actual plugin output or interface imagery.",
       "Don't add shadows to the existing flat component patterns.",
-      "Don't replace the self-hosted display face with a system font as the intended identity.",
+      "Do not introduce brand slogans or promotional filler.",
       "Don't apply this hub's design to independently maintained project sites without a separate redesign brief."
     ]
   }
