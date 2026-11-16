@@ -202,7 +202,21 @@
         "name": "wide",
         "value": "1500px"
       }
-    ]
+    ],
+    "themes": {
+      "default": "system",
+      "storageKey": "piducan-theme",
+      "dark": {
+        "paper": "#191b20",
+        "ink": "#f0f0e9",
+        "muted": "#b5b8b0",
+        "line": "#42464d",
+        "blue": "#b5a6ff",
+        "action-text": "#191b20",
+        "about-ground": "#302a43"
+      },
+      "artwork": "Preserve original light-theme color fields and linework in both themes."
+    }
   },
   "components": [
     {

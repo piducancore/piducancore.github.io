@@ -56,6 +56,13 @@ copying version numbers or binary URLs, so new releases require no root-site upd
 Do not replace the account Pages domain, add catch-all routing, or publish the
 projects' folders from this repository.
 
+## Theme
+
+The header offers System, Light, and Dark. System follows the device preference,
+including changes while the page is open. Explicit choices use localStorage
+and apply before the stylesheet renders. Without JavaScript, the device theme
+still applies through CSS. Theme settings do not alter the independent project sites.
+
 ## Fonts and privacy
 
 Archivo and Unbounded are self-hosted under the SIL Open Font License. License

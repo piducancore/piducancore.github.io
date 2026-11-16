@@ -12,6 +12,12 @@ colors:
   line: "#c9ccc3"
   warm-ink: "#372019"
   white: "#ffffff"
+  dark-ground: "#191b20"
+  dark-ink: "#f0f0e9"
+  dark-muted: "#b5b8b0"
+  dark-line: "#42464d"
+  dark-accent: "#b5a6ff"
+  dark-about: "#302a43"
 typography:
   display:
     fontFamily: "Unbounded, Arial, sans-serif"
@@ -113,6 +119,10 @@ Dense lists and spacious features share the same type, palette, and link languag
 **Paper** is the page ground. **Ink** carries headings and primary text. **Muted** carries secondary text on paper. **Line** separates list rows and outlines small controls. **White** is reserved for high-contrast action text.
 
 **The Field Rule.** Give expressive color a complete surface; keep the surrounding project information on paper.
+
+### Dark theme
+
+Dark mode uses charcoal reading surfaces, pale text, muted secondary text, and a lavender interactive accent. The about section becomes a deep violet surface. Artwork keeps its original colors and dark linework; primary buttons use dark text on lavender. System is the default and follows live operating-system changes. Explicit Light or Dark choices persist locally and apply before rendering. The native theme selector appears on every page, beside the wordmark on mobile.
 
 ## Typography
 
