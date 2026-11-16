@@ -41,3 +41,11 @@ h2{font-size:26px;letter-spacing:-.02em}
 .footer{border-top:1px solid var(--line)}
 @media(max-width:760px){.intro h1{font-size:40px}.intro{padding-top:28px;padding-bottom:30px}.signal{height:170px}.feature-visual{height:230px}.about-inner{grid-template-columns:1fr;gap:20px;padding-block:36px}.about h2{font-size:25px}.downloads-intro h1{font-size:40px}}
 @media(max-width:430px){.intro h1{font-size:36px}.brand{font-size:20px}.footer .brand{font-size:18px}}
+
+/* Show the real interfaces without cropping their controls. */
+.feature-visual,.download-art{background:transparent!important;height:auto;aspect-ratio:8 / 5;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);overflow:hidden}
+.project-screenshot{display:block;width:100%;height:100%;object-fit:contain}
+.feature-visual:hover .project-screenshot{opacity:.92}
+.feature-visual:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+.download-art{align-self:start}
+.selected{padding-top:24px}

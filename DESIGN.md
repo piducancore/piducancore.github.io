@@ -93,7 +93,7 @@ components:
 
 **Creative North Star: "A personal software index"**
 
-Regular-weight Archivo headlines and geometric signal art give this collection its own voice. Quiet paper supports legible project information; broad color fields give the expressive material room. The system is flat, direct, and playful without imitating the interfaces of the audio tools it presents.
+Regular-weight Archivo headlines and actual project screenshots give this collection its own voice. Quiet paper supports legible project information; broad color fields give the expressive material room. The system is flat, direct, and playful without imitating the interfaces of the audio tools it presents.
 
 Dense lists and spacious features share the same type, palette, and link language. The existing project sites retain independent identities; this system describes the personal hub, not a retroactive redesign of those products.
 
@@ -168,15 +168,15 @@ Outlined pills show a category and its count. Selected state reverses to ink wit
 
 ### Project features and rows
 
-Feature artwork sits above an unboxed name, description, and explicit project/download links. Artwork hover enlarges the geometry by 2.5% over 650ms with exponential ease-out. Index rows use fine top separators and a circular 44px destination link; its hover changes to blue with paper-colored artwork. Link transitions take 200ms.
+Actual UI screenshots sit above an unboxed name, description, and explicit project/download links. Screenshot links retain visible keyboard focus and a subtle opacity change on hover. Index rows use fine top separators and a circular 44px destination link; its hover changes to blue with paper-colored artwork. Link transitions take 200ms.
 
 ### Navigation
 
 The header and footer identify the person as piducancore in bold Archivo. The domain is an address, not a brand. Navigation is small Archivo text with no resting underline; hover and the current page introduce an underline. It stays visible on mobile.
 
-### Signal control
+### Project screenshots
 
-A paper-colored remix pill sits in a lavender field. Hover reverses it to ink and paper. The control changes the geometric composition without playing sound, with a live text announcement of the selected pattern. It does not start automatic animation. Reduced-motion preferences remove transitions and smooth scrolling throughout the site.
+Use the actual UI screenshots published by each child project. Preserve the complete interface with object-fit: contain and intrinsic image dimensions. Keep screenshots unchanged in both themes. The homepage has no decorative signal banner. Download entries reuse the same screenshots. Source paths and publication URLs are recorded in public/assets/projects/SOURCES.md.
 
 ## Do's and Don'ts
 
