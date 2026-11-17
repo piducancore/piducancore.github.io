@@ -10,7 +10,7 @@
       row.hidden = category !== 'All' && row.dataset.category !== category;
       if (!row.hidden) count++;
     });
-    document.querySelector('[data-filter-status]').textContent = `${count} ${category === 'All' ? '' : category.toLowerCase() + ' '}projects shown.`;
+    document.querySelector('[data-filter-status]').textContent = `${count} ${count === 1 ? 'project' : 'projects'}${category === 'All' ? '' : ' · ' + category}`;
   });
   document.addEventListener('site:navigated', enhance);
   enhance();

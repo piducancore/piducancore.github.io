@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-16T19:47:55.180287+00:00",
+  "generatedAt": "2026-11-17T16:45:49.945922+00:00",
   "title": "Design System: piducancore",
   "extensions": {
     "colorMeta": {},
@@ -21,17 +21,38 @@
         "displayName": "Reading text",
         "purpose": "Descriptions and explanatory copy."
       },
-      "action": {
-        "displayName": "Action text",
-        "purpose": "Exploration and download links."
+      "label": {
+        "displayName": "Metadata",
+        "purpose": "Passive project metadata and filter result counts."
       }
     },
-    "shadows": [],
+    "shadows": [
+      {
+        "name": "filter",
+        "value": "0 4px 1px var(--chip-edge), 0 7px 9px -3px var(--chip-shadow)",
+        "purpose": "Interactive project filter state."
+      },
+      {
+        "name": "filter-hover",
+        "value": "0 6px 1px var(--chip-edge), 0 10px 12px -4px var(--chip-shadow)",
+        "purpose": "Interactive project filter state."
+      },
+      {
+        "name": "filter-pressed",
+        "value": "0 1px 1px var(--chip-edge), 0 2px 4px var(--chip-shadow)",
+        "purpose": "Interactive project filter state."
+      }
+    ],
     "motion": [
       {
-        "name": "row-link-hover",
-        "value": "background .2s, color .2s",
-        "purpose": "Circular destination link state feedback."
+        "name": "filter-feedback",
+        "value": "transform 160ms ease, box-shadow 160ms ease, background 160ms ease",
+        "purpose": "Filter interaction feedback."
+      },
+      {
+        "name": "theme-icons",
+        "value": "transform 220ms ease, opacity 150ms ease",
+        "purpose": "Theme icon change."
       },
       {
         "name": "reduced-motion",
@@ -41,20 +62,16 @@
     ],
     "breakpoints": [
       {
-        "name": "compact",
-        "value": "430px"
+        "name": "narrow",
+        "value": "360px"
       },
       {
         "name": "mobile",
         "value": "760px"
       },
       {
-        "name": "tablet",
-        "value": "1100px"
-      },
-      {
-        "name": "wide",
-        "value": "1500px"
+        "name": "stacked-intro",
+        "value": "1000px"
       }
     ],
     "themes": {
@@ -66,16 +83,65 @@
         "muted": "#b6b9af",
         "line": "#454941",
         "action-text": "#1c1e1b",
-        "about-ground": "#191b20",
         "accent": "#d4d8c9"
       },
       "artwork": "Actual UI screenshots retain their original colors in both themes."
     }
   },
-  "components": [],
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "description": "Primary action from the current site stylesheet.",
+      "html": "<a class=\"button\" href=\"#downloads\">View downloads</a>",
+      "css": ":host{--paper:#f4f3ef;--ink:#262823;--muted:#60625b;--line:#c7c9c1;--accent:#444b42;--action-text:#fff;--chip-face:#faf9f6;--chip-edge:#d8d7d0;--chip-shadow:rgb(38 40 35 / .16);--body:Archivo,Arial,sans-serif;--technical:SFMono-Regular,Consolas,monospace;display:block;background:var(--paper);color:var(--ink);padding:16px;font:17px/1.55 var(--body)}*{box-sizing:border-box}a{color:inherit}svg{width:20px;height:20px}button{cursor:pointer;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.button{display:inline-flex;align-items:center;justify-content:center;gap:15px;min-height:44px;padding:13px 20px;border-radius:4px;background:var(--accent);color:var(--action-text);text-decoration:none;font-weight:700}.button:hover{background:var(--ink);color:var(--paper)}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "description": "Text action from the current site stylesheet.",
+      "html": "<a class=\"text-link\" href=\"#projects\">Browse projects</a>",
+      "css": ":host{--paper:#f4f3ef;--ink:#262823;--muted:#60625b;--line:#c7c9c1;--accent:#444b42;--action-text:#fff;--chip-face:#faf9f6;--chip-edge:#d8d7d0;--chip-shadow:rgb(38 40 35 / .16);--body:Archivo,Arial,sans-serif;--technical:SFMono-Regular,Consolas,monospace;display:block;background:var(--paper);color:var(--ink);padding:16px;font:17px/1.55 var(--body)}*{box-sizing:border-box}a{color:inherit}svg{width:20px;height:20px}button{cursor:pointer;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.text-link{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;min-height:44px}.text-link:hover{text-decoration:underline}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Project filters",
+      "kind": "chip",
+      "description": "Project filters from the current site stylesheet.",
+      "html": "<div class=\"filters\"><button aria-pressed=\"true\">All <span>8</span></button><button aria-pressed=\"false\">Audio <span>2</span></button></div>",
+      "css": ":host{--paper:#f4f3ef;--ink:#262823;--muted:#60625b;--line:#c7c9c1;--accent:#444b42;--action-text:#fff;--chip-face:#faf9f6;--chip-edge:#d8d7d0;--chip-shadow:rgb(38 40 35 / .16);--body:Archivo,Arial,sans-serif;--technical:SFMono-Regular,Consolas,monospace;display:block;background:var(--paper);color:var(--ink);padding:16px;font:17px/1.55 var(--body)}*{box-sizing:border-box}a{color:inherit}svg{width:20px;height:20px}button{cursor:pointer;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.filters{display:flex;flex-wrap:wrap;gap:12px;padding-bottom:16px}.filters button{font:400 13px/1.5 var(--technical);min-height:44px;display:flex;align-items:center;gap:12px;border:0;border-radius:13px;padding:11px 18px;background:var(--chip-face);color:var(--ink);box-shadow:0 4px 1px var(--chip-edge),0 7px 9px -3px var(--chip-shadow);transition:transform 160ms ease,box-shadow 160ms ease,background 160ms ease;cursor:pointer}.filters button:hover{transform:translateY(-2px);box-shadow:0 6px 1px var(--chip-edge),0 10px 12px -4px var(--chip-shadow)}.filters button[aria-pressed=true],.filters button:active{transform:translateY(3px);background:var(--ink);color:var(--paper);box-shadow:0 1px 1px var(--chip-edge),0 2px 4px var(--chip-shadow)}.filters button span{font-size:11px;opacity:1;color:inherit}.filters{gap:12px 10px}.filters button{padding:10px 13px}.filters button{transition:none}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Metadata",
+      "kind": "chip",
+      "description": "Metadata from the current site stylesheet.",
+      "html": "<span class=\"project-tags\"><span class=\"project-tag\">MIDI sequencer</span><span class=\"project-tag\">CLAP / VST3</span></span>",
+      "css": ":host{--paper:#f4f3ef;--ink:#262823;--muted:#60625b;--line:#c7c9c1;--accent:#444b42;--action-text:#fff;--chip-face:#faf9f6;--chip-edge:#d8d7d0;--chip-shadow:rgb(38 40 35 / .16);--body:Archivo,Arial,sans-serif;--technical:SFMono-Regular,Consolas,monospace;display:block;background:var(--paper);color:var(--ink);padding:16px;font:17px/1.55 var(--body)}*{box-sizing:border-box}a{color:inherit}svg{width:20px;height:20px}button{cursor:pointer;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.project-tags{display:flex;flex-wrap:wrap;gap:8px}.project-tags .project-tag+.project-tag{border-left:1px solid var(--line);padding-left:8px}.project-tag{text-transform:none;display:inline-flex;align-items:center;width:fit-content;padding:0;color:var(--muted);font:400 12px/1.5 var(--technical);letter-spacing:0}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Navigation from the current site stylesheet.",
+      "html": "<header class=\"header\"><nav aria-label=\"Main navigation\"><a href=\"#projects\">Projects</a><a href=\"#downloads\" aria-current=\"page\">Downloads</a><a href=\"#about\">About</a></nav></header>",
+      "css": ":host{--paper:#f4f3ef;--ink:#262823;--muted:#60625b;--line:#c7c9c1;--accent:#444b42;--action-text:#fff;--chip-face:#faf9f6;--chip-edge:#d8d7d0;--chip-shadow:rgb(38 40 35 / .16);--body:Archivo,Arial,sans-serif;--technical:SFMono-Regular,Consolas,monospace;display:block;background:var(--paper);color:var(--ink);padding:16px;font:17px/1.55 var(--body)}*{box-sizing:border-box}a{color:inherit}svg{width:20px;height:20px}button{cursor:pointer;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.header nav{display:flex;gap:28px;align-items:center;font-family:var(--technical)}.header nav a{font-size:14px;min-height:44px;display:flex;align-items:center;gap:7px;text-decoration:none}.header nav a:hover,.header nav a[aria-current]{text-decoration:underline}.header nav{gap:20px}.header nav{order:2;flex-basis:100%;justify-content:space-between;gap:12px}.header nav a{font-size:13px}.header nav{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.header nav a{font-size:13px}.header nav{grid-column:1 / -1;order:2}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Destination link",
+      "kind": "custom",
+      "description": "Destination link from the current site stylesheet.",
+      "html": "<a class=\"row-link\" href=\"#source\">Source <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" stroke=\"currentColor\" stroke-width=\"1.7\"/></svg></a>",
+      "css": ":host{--paper:#f4f3ef;--ink:#262823;--muted:#60625b;--line:#c7c9c1;--accent:#444b42;--action-text:#fff;--chip-face:#faf9f6;--chip-edge:#d8d7d0;--chip-shadow:rgb(38 40 35 / .16);--body:Archivo,Arial,sans-serif;--technical:SFMono-Regular,Consolas,monospace;display:block;background:var(--paper);color:var(--ink);padding:16px;font:17px/1.55 var(--body)}*{box-sizing:border-box}a{color:inherit}svg{width:20px;height:20px}button{cursor:pointer;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.row-link{min-height:44px;display:flex;align-items:center;justify-content:flex-end;gap:8px;font:13px var(--technical);text-decoration:none}.row-link svg{width:16px;height:16px}.row-link:hover{text-decoration:underline}.row-link{grid-column:2;grid-row:1 / span 2}.row-link{grid-row:1 / span 2}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Mixer controls",
+      "kind": "input",
+      "description": "Mixer controls from the current site stylesheet.",
+      "html": "<div class=\"beat-dock\"><button aria-pressed=\"true\">Mute</button><label class=\"beat-volume\">Volume <input type=\"range\" min=\"0\" max=\"100\" value=\"60\"></label></div>",
+      "css": ":host{--paper:#f4f3ef;--ink:#262823;--muted:#60625b;--line:#c7c9c1;--accent:#444b42;--action-text:#fff;--chip-face:#faf9f6;--chip-edge:#d8d7d0;--chip-shadow:rgb(38 40 35 / .16);--body:Archivo,Arial,sans-serif;--technical:SFMono-Regular,Consolas,monospace;display:block;background:var(--paper);color:var(--ink);padding:16px;font:17px/1.55 var(--body)}*{box-sizing:border-box}a{color:inherit}svg{width:20px;height:20px}button{cursor:pointer;color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.beat-dock button{min-height:44px;padding:8px 12px;border:1px solid var(--line);border-radius:3px;background:transparent;font:13px var(--technical)}.beat-dock button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}.beat-dock button:hover{border-color:var(--ink)}.beat-volume{display:flex;gap:8px;align-items:center;font-size:12px}.beat-volume input{width:90px}.beat-dock input[type=range]{accent-color:var(--accent);min-height:44px;cursor:pointer}.beat-dock input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.beat-volume{margin-right:auto}@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}"
+    }
+  ],
   "narrative": {
-    "northStar": "A personal software index",
-    "overview": "Graphite neutral palette with Drafting monospace headings and technical labels, Archivo body text, and actual project screenshots.",
+    "northStar": "Graphite + Drafting",
+    "overview": "A personal project index, with technical headings and plain descriptions. Visible identity is **piducancore**. piducan.dev is the address. Avoid sales copy, claims of superiority, invented biography, and self-deprecation.",
     "keyCharacteristics": [
       "Drafting monospace headings and labels with readable Archivo descriptions.",
       "Uncropped UI screenshots reused from the child project sites.",
@@ -95,11 +161,15 @@
       }
     ],
     "dos": [
-      "Use consistent section spacing and grouped metadata.",
-      "Preserve complete screenshots and visible keyboard focus."
+      "Do keep the Graphite palette, technical headings and Archivo descriptions.",
+      "Do use actual project screenshots and factual project data.",
+      "Do distinguish interactive filters from passive metadata.",
+      "Do preserve keyboard focus, reduced motion and Light/Dark/System preferences."
     ],
     "donts": [
-      "Do not add promotional copy or decorative artwork."
+      "Don't invent biography, release availability, promotional claims or artwork.",
+      "Don't copy child-site release artifacts into the root deployment or change their routes.",
+      "Don't add decorative wave banners or temporary design selectors."
     ]
   }
 }
