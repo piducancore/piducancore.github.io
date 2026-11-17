@@ -29,7 +29,7 @@ test('root build preserves custom domain and never occupies project directories'
   assert.equal(await readFile('dist/CNAME','utf8'),'piducan.dev\n');
   for (const page of ['index.html','downloads/index.html','404.html']) {
     const html = await readFile(`dist/${page}`,'utf8');
-    for (const [,asset] of html.matchAll(/(?:href|src)="(\/assets\/[^\"]+)"/g)) await readFile(`dist${asset}`);
+    for (const [,asset] of html.matchAll(/(?:href|src)="(\/assets\/[^\"]+)"/g)) await readFile(`dist${new URL(asset, 'https://piducan.dev').pathname}`);
     assert.equal((html.match(/<h1[ >]/g)||[]).length,1);
   }
 });

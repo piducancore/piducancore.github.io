@@ -34,3 +34,5 @@ Chosen visual direction: Graphite palette + Drafting typography. Use neutral war
 Voice should express curiosity and enjoyment through concrete details. Plain language need not be dry: sound, poems from spreadsheets, and maps of completos provide personality without hype. Avoid repetitive introductions and defensive framing about project age or sophistication.
 
 Public introduction: developer and beatmaker. The owner returned to Ableton Live and built Picadura and Buffer Uppercut using Codex. Keep the site focused on music and projects; private work and wellbeing context is not public biography. Do not add publishing commitments or placeholders for unreleased music.
+
+Hidden beat prototype: use four temporary synthesized layers with Tone.js. Discoveries join a shared clock on bar boundaries; all four playing unlock a combined mixer with mute, multi-solo and master effects. Native navigation to child sites remains independent. Avoid a forced developer/beatmaker split. Keep Picadura and Buffer Uppercut visible with their UI screenshots in Latest projects, alongside the broader project index. No synthesized demo is presented as the owner’s released music.

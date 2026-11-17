@@ -76,3 +76,13 @@ font requests, client-side GitHub API calls, or autoplay audio.
 Revert the relevant commit on `main`; the Website workflow republishes that version.
 The earlier starter is retained in Git history. The old sample blog posts were
 unmodified template content and are not represented as personal writing.
+
+## Hidden beat prototype (local)
+
+Run `npm ci`, `npm run build`, then `npm run preview`. Open http://127.0.0.1:4321. The production build self-hosts the locked Tone.js dependency and its license; no CDN is required. No sound starts before a trigger is clicked.
+
+Four clues: ● beside piducancore (drums), × beside Index (hats), ~ beside About (bass), and ◇ beside Downloads (keys). They join on bar boundaries at 84 BPM. Once all are playing, the mixer reveals all four symbols with mute/solo, master filter, delay, distortion, and true effects bypass. Multiple solos combine; mute wins. Reset disposes the audio graph and clears discovery.
+
+The synthesized two-bar sketch is temporary demonstration audio, not a published beat by the owner. The engine stays alive during enhanced navigation between `/` and `/downloads/`; child project sites use ordinary navigation and stop playback. Reloading starts a fresh discovery session. Native links and the complete project index remain usable without JavaScript. Browser audio interruptions pause the beat; playback resumes with a user click.
+
+Validation: `npm test` includes discovery/unlock, multi-solo/mute precedence, reset, original site boundaries, and theme behavior. Browser verification covers Chrome desktop/mobile layouts, emitted audio levels, navigation continuity, mixer controls, and reset.

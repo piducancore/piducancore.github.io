@@ -44,7 +44,7 @@ A personal project index, with technical headings and plain descriptions. Visibl
 Warm paper, graphite text and controls in light mode; charcoal, pale text and neutral controls in dark mode. Accent color is reserved for interaction and focus. Theme defaults to System, follows OS changes, and persists explicit Light/Dark choices. Screenshots retain their original colors.
 
 ## Typography
-Use the native monospace stack above for headings, navigation, identity, filters, and metadata. Archivo is self-hosted for descriptions and actions. Section headings are uppercase with modest tracking; project names keep their authored capitalization. Main headings use tight tracking and regular weight. On mobile the home heading uses clamp(24px, 7.1vw, 40px) to preserve its two-line composition at 320px. Project titles are 23px, index titles 21px, and labels 12px.
+Use the native monospace stack above for headings, navigation, identity, filters, and metadata. Archivo is self-hosted for descriptions and actions. Section headings are uppercase with modest tracking; project names keep their authored capitalization. Category filters and badges share the same authored labels: Audio, Web, Words, Maps. Metadata preserves normal casing and acronyms. Main headings use tight tracking and regular weight. On mobile the home heading uses clamp(24px, 7.1vw, 40px) to preserve its two-line composition at 320px. Project titles are 23px, index titles 21px, and labels 12px.
 
 ## Layout and spacing
 The centered container is at most 1440px, with fluid 22–56px gutters. The intro places a short note alongside the title on wide screens and stacks below 1000px. Major sections are separated by 80px, reduced to 56px on mobile. Related labels are 8px apart, descriptions follow at 12px, and feature titles sit 20px below screenshots (16px on mobile).
@@ -55,7 +55,11 @@ Features use equal columns with a 32px gap and stack below 760px. Titles, metada
 Use actual UI screenshots from the child sites. Preserve the complete interface in 8:5 frames with object-fit:contain, intrinsic dimensions, descriptive alt text, and no enlargement or rotation. Provenance is recorded in public/assets/projects/SOURCES.md. Never replace screenshots with invented abstract artwork or copy child project release binaries into the root site.
 
 ## Interaction and accessibility
-Use explicit project, download, installation, and source links. Interactive targets generally have a minimum 44px height. Keyboard focus is a 3px accent outline with 5px offset. Filters expose aria-pressed and a live result count; all projects remain visible without JavaScript. The project list owns its bottom border so filtering does not leave it open. Respect reduced motion, preserve native theme selection, and keep screenshots and controls usable in both themes.
+Use explicit project, download, installation, and source links. Interactive targets generally have a minimum 44px height. Keyboard focus is a 3px accent outline with 5px offset. Filters expose aria-pressed and a live result count; all projects remain visible without JavaScript. The project list owns its bottom border so filtering does not leave it open. Respect reduced motion, preserve Light/Dark/System theme selection, and keep screenshots and controls usable in both themes.
 
 ## Surface finish
-Flat surfaces, fine rules, no shadows, no decorative wave banner. Actions have slightly rounded corners; filters and circular project links retain their established shapes. No temporary palette or typography selectors ship.
+Flat page surfaces and fine rules; shallow shadows are reserved for project chips. No decorative wave banner. Actions have slightly rounded corners; filters and circular project links retain their established shapes. No temporary palette or typography selectors ship.
+
+Theme control: a 44px sun/moon button and compact auto button. A circular reveal expands from the button when switching explicitly; reduced motion and unsupported browsers switch instantly. Auto follows the system preference.
+
+Project filters use raised graphite chips with a pressed selected state, inspired by Pin UI Chips. Noninteractive metadata uses smaller, shallower chips without hover or press behavior.

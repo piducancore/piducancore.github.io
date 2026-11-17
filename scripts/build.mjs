@@ -5,6 +5,10 @@ export async function build() {
   await rm(out, { recursive: true, force: true });
   await mkdir(new URL('downloads/', out), { recursive: true });
   await cp(new URL('../public/', import.meta.url), out, { recursive: true });
+  await mkdir(new URL('assets/vendor/', out), { recursive: true });
+  await cp(new URL('../node_modules/tone/build/Tone.js', import.meta.url), new URL('assets/vendor/tone.js', out));
+  await cp(new URL('../node_modules/tone/build/Tone.js.LICENSE.txt', import.meta.url), new URL('assets/vendor/Tone.js.LICENSE.txt', out));
+  await cp(new URL('../node_modules/tone/LICENSE.md', import.meta.url), new URL('assets/vendor/TONE-LICENSE.md', out));
   await Promise.all([
     writeFile(new URL('index.html', out), home()),
     writeFile(new URL('downloads/index.html', out), downloads()),
