@@ -125,7 +125,7 @@ Features are unboxed articles with actual screenshots contained in 8:5 frames. T
 Desktop navigation uses 14px technical text, 44px link heights, and 28px gaps (20px below 1000px). Hover and the current page are underlined. At 760px and below, identity and the sound clue share the first column and theme controls occupy the second; navigation spans the row beneath. Below 360px navigation forms two columns.
 
 ### Theme control
-A 44px icon button switches Light/Dark; Auto restores the system preference and exposes aria-pressed. Its 8px corners and line-color hover background distinguish it from plain navigation. Sun/moon icons transition over 220ms/150ms. The circular theme reveal falls back to an instant switch with reduced motion or without browser support.
+A 44px icon button switches Light/Dark; Auto restores the system preference and exposes aria-pressed. Its 8px corners and line-color hover background distinguish it from plain navigation. Sun/moon icons transition over 220ms/150ms. The 520ms pixelated theme dissolve spreads from the theme button in crisp square tiles and falls back to an instant switch with reduced motion or without browser support.
 
 ### Hidden beat controls
 Circular sound clues reveal a fixed, scrollable dock capped at 75dvh. Mixer buttons use 3px corners, fine rules and ink/paper inversion when pressed. Native range inputs use the accent color and 44px minimum height, with a 3px focus offset. Track columns change from four to two on mobile. Preserve playback, mute, multi-solo, master effects and reset behavior.
