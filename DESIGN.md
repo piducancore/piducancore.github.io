@@ -85,6 +85,8 @@ Warm paper, graphite text and controls in light mode; charcoal, pale text and ne
 ## Typography
 Use the native monospace stack above for headings, navigation, identity, filters, and metadata. Archivo is self-hosted for descriptions and actions. Section headings are uppercase with modest tracking; project names keep their authored capitalization. Category filters and badges share the same authored labels: Audio, Web, Words, Maps. Metadata preserves normal casing and acronyms. Main headings use tight tracking and regular weight. On mobile the home heading uses clamp(28px, 7vw, 40px) to preserve its two-line composition at 320px. Project titles are 23px, index titles 21px, and labels 12px.
 
+Orgdot Fixed v01 is a self-hosted pixel accent at 16px/1.5, regular weight, limited to the project count and hidden-beat status. Ship its original ORGDOT.txt notice with the font.
+
 ## Layout
 The centered container is at most 1440px, with fluid 22–56px gutters. The intro places a short note alongside the title on wide screens and stacks below 1000px. Major sections are separated by 80px, reduced to 56px on mobile. Related labels are 8px apart, descriptions follow at 12px, and feature titles sit 20px below screenshots (16px on mobile).
 
